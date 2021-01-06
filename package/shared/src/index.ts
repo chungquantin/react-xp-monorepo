@@ -1,5 +1,3 @@
-const s: string = "Hello Chase";
-
-console.log(s);
+const s: string = "Hello World";
 
 export default s;

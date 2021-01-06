@@ -20,6 +20,7 @@
 	},
 	"scripts": {
 		"start": "react-app-rewired start",
+		"dev": "concurrently \" cd ../shared && nodemon \" \" npm run start \" ",
 		"build": "react-app-rewired build",
 		"test": "react-app-rewired test",
 		"eject": "react-app-rewired eject"
