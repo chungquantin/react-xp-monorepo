@@ -2,5 +2,20 @@
 	"name": "@monorepo/shared",
 	"version": "1.0.0",
 	"private": true,
-	"main": "index.ts"
+	"main": "dist/index.js",
+	"typings": "dist/index.d.ts",
+	"devDependencies": {
+		"nodemon": "^2.0.6",
+		"react": "16.13.1",
+		"react-native": "https://github.com/expo/react-native/archive/sdk-40.0.1.tar.gz",
+		"ts-loader": "^8.0.14",
+		"typescript": "^4.1.3"
+	},
+	"scripts": {
+		"build": "tsc --build",
+		"start": "yarn build && node dist/index.js"
+	},
+	"dependencies": {
+		"build": "^0.1.4"
+	}
 }
